@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">LyricGrab</string>
+    <string name="action_settings">Settings</string>
+    <string name="lyric">LyricItem</string>
+    <string name="youtube_url">https://www.youtube.com/results?search_query=</string>
+    <string name="facebook_url">https://www.facebook.com/search/top/?q=</string>
+    <string name="facebook_url2"><![CDATA[&ref=]]></string>
+    <string name="facebook_url3">eyJzaWQiOiIwLjAwODczNjczNjg5ODIyMDUyIiwicXMiOiJKVFZDSlRJeWMyRmtaU1V5TWlVMVJBIiwiZ3YiOiJiZWUwOWY5M2ZhNzMyY2ZhNTlhMWNiNmQ5ZjQ1MGQzODkyNDI0ZTQ5In0</string>
+    <string name="twitter_url">https://twitter.com/search?q=</string>
+    <string name="twitter_url2"><![CDATA[&src=typd]]></string>
+    <string name="song_lyrics_url"><![CDATA[http://www.songlyrics.com/index.php?section=search&searchIn1=artist&searchIn2=album&searchIn3=song&searchIn4=lyrics&searchW=]]></string>
+    <string name="toast_no_match_message">no matches found</string>
+    <string name="search_button_text">Search</string>
+    <string name="search_hint">Search artist, song, and/or album!</string>
+    <string name="next_button">Next</string>
+    <string name="prev_button">Prev</string>
+    <string name="artist_text">Artist:</string>
+    <string name="song_text">Song:</string>
+    <string name="album_text">Album:</string>
+</resources>

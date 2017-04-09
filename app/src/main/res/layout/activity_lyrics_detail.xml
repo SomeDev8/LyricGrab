@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_lyrics_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.rorysoft.lyricgrab.LyricsDetail">
+
+    <TextView
+        android:id="@+id/artist_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:text="@string/artist_text"/>
+
+    <TextView
+        android:id="@+id/song_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/artist_name"
+        android:textStyle="bold"
+        android:text="@string/song_text"/>
+
+    <TextView
+        android:id="@+id/album_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/song_name"
+        android:textStyle="bold"
+        android:text="@string/album_text"/>
+
+    <ImageView
+        android:id="@+id/youtube"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/album_label"
+        android:layout_marginTop="@dimen/image_margin_top"
+        android:src="@mipmap/youtube_icon"/>
+
+    <ImageView
+        android:id="@+id/facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/album_label"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/youtube"
+        android:layout_toEndOf="@+id/youtube"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@mipmap/facebook_icon"/>
+
+    <ImageView
+        android:id="@+id/twitter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/album_label"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/facebook"
+        android:layout_toEndOf="@+id/facebook"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:src="@mipmap/twitter_icon"/>
+
+    <TextView
+        android:id="@+id/artist_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/artist_label"
+        android:layout_toEndOf="@+id/artist_label"/>
+
+    <TextView
+        android:id="@+id/song_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/artist_name"
+        android:layout_toRightOf="@+id/song_label"
+        android:layout_toEndOf="@+id/song_label"/>
+
+    <TextView
+        android:id="@+id/album_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/song_name"
+        android:layout_toRightOf="@+id/album_label"
+        android:layout_toEndOf="@+id/album_label"/>
+
+    <ImageView
+        android:id="@+id/album_art"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        />
+
+    <ImageView
+        android:id="@+id/border"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/album_art"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/border"
+        android:layout_marginTop="@dimen/image_margin_top"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/border"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/scroll_view_margin_top">
+
+        <TextView
+            android:id="@+id/lyricView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"/>
+    </ScrollView>
+</RelativeLayout>

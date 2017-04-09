@@ -1,0 +1,14 @@
+<resources>
+
+    <style name="Theme.AppCompat.DayNight.DarkActionBar." parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorWindowBackground</item>
+
+    </style>
+
+
+</resources>
